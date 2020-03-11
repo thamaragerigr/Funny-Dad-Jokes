@@ -1,22 +1,27 @@
 <template>
-  <div>
-    <h1>Dad Jokes</h1>
-    <h2>Welcome!</h2>
-  </div>
+    <div>
+        <h1>About Dad Jokes</h1>
+        <p>This is an app that displays corny dad jokes</p>
+    </div>
 </template>
 
 <script>
 export default {
     head(){
         return {
-            title: 'Welcome to Dad Jokes!',
+            title: 'About Dad Jokes',
             meta: [ {
                 hid:'description',
                 name: 'description',
-                content: 'Welcome to Dad Jokes!'
+                content: 'Best dad jokes'
                }
             ]
         }
     }
 }
 </script>
+
+
+<style>
+
+</style>
