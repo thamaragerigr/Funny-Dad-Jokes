@@ -1,7 +1,12 @@
 <template>
-  <div id='app'>
+  <div id='app section'>
     <nav-bar />
     <nuxt />
+    <div class="container">
+  <div class="notification">
+    This container is <strong>centered</strong> on desktop.
+  </div>
+</div>
   </div>
 </template>
 
