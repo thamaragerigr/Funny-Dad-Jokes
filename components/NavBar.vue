@@ -1,10 +1,13 @@
 <template>
       <div class="nav">
-        <nuxt-link to="/" class="brand">Dad Jokes</nuxt-link>
+        <nuxt-link v-if="main" to="/" class="brand">
+        <span>funny</span><br>
+        <span>dad</span><br>
+        <span>jokes</span></nuxt-link>
         <nav>
-          <nuxt-link to="/">Home</nuxt-link>&nbsp;|
-          <nuxt-link to="/about">About</nuxt-link>&nbsp;|
-          <nuxt-link to="/jokes">Jokes</nuxt-link>&nbsp;| 
+          <nuxt-link class="nav-item" to="/">Home</nuxt-link>
+          <nuxt-link class="nav-item" to="/about">About</nuxt-link>
+          <nuxt-link class="nav-item" to="/jokes">Jokes</nuxt-link>
         </nav>
       </div>
 </template>
@@ -12,36 +15,11 @@
 
 <script>
   export default {
-    name: 'NavBar'
+    name: 'NavBar',
+    computed:{
+      main(){
+          return this.$route.path !== '/'
+      }
+  }
   }
 </script>
-
-
-<style scoped>
-    .brand {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 1.5em;
-      color: #39b982;
-      text-decoration: none;
-    }
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 60px;
-    }
-    .nav .nav-item {
-      box-sizing: border-box;
-      margin: 0 5px;
-      color: rgba(0, 0, 0, 0.5);
-      text-decoration: none;
-    }
-    .nav .nav-item.router-link-exact-active {
-      color: #39b982;
-      border-bottom: solid 2px #39b982;
-    }
-    .nav a {
-      display: inline-block;
-    }
-</style>
