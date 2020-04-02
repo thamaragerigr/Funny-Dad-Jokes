@@ -4,27 +4,51 @@
 }
 
 body {
-  background-color: #2567ef;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #ff564f;
   font-family: 'Fredoka One', cursive;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #app {
+  max-width: 700px;
+  position: relative;
+  margin: 0 auto;
 }
 
 body .section {
   padding: 2rem;
   width: 80%;
+  position: absolute;
+  margin: auto;
+  top: 200px;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-h1 {
+body .section h1 {
   font-size: calc(3rem + 24 * ( (100vw - 420px) / 480));
   line-height: calc(2.5rem + 24 * ( (100vw - 420px) / 480));
   text-align: left;
   padding-bottom: 2rem;
+  color: #ff564f;
+}
+
+body .section h3 {
+  font-size: 2rem;
+}
+
+body .section .img-fluid {
+  width: 300px;
 }
 
 .brand {
-  font-size: calc(2rem + 24 * ( (100vw - 420px) / 480));
+  font-size: 3rem;
   text-decoration: none;
-  line-height: calc(1.6rem + 24 * ( (100vw - 420px) / 480));
+  line-height: 2.4rem;
   position: absolute;
   left: 1rem;
 }
@@ -40,13 +64,12 @@ nav {
 .nav {
   padding-top: 2rem;
   height: 150px;
-  color: #ffffff;
   font-family: 'Fredoka One', cursive;
 }
 
 .nav .nav-item {
   margin: 0 5px;
-  color: #ffffff;
+  color: #ff9d18;
   font-family: 'ABeeZee', sans-serif;
   font-weight: 900;
   font-size: 1rem;
@@ -60,7 +83,7 @@ nav {
 
 .nav a {
   display: inline-block;
-  color: #ffffff;
+  color: #ff564f;
   text-decoration: none;
 }
 
@@ -74,11 +97,19 @@ nav {
   background-color: #ff564f;
 }
 
-.img-fluid {
-  width: 300px;
-}
-
 .centered {
   text-align: center;
+}
+
+.blue {
+  color: #2567ef;
+}
+
+.yellow {
+  color: #ff9d18;
+}
+
+.space-top {
+  margin-top: 100px;
 }
 /*# sourceMappingURL=style.css.map */

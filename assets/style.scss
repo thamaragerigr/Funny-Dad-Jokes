@@ -11,31 +11,50 @@ $white: #ffffff;
 }
 
 body {
-    background-color: $blue;
+    background-color: $white;
     //font
-    color: $white;
+    color: $red;
     font-family: 'Fredoka One', cursive;
-    
+    align-items: center;
+
+    #app{
+        max-width: 700px;
+        position: relative;
+        margin: 0 auto;
+    }
 
     .section{
         padding: 2rem;
         width: 80%;
+        position: absolute;
+        margin: auto;
+        top: 200px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        h1 {
+            font-size: calc(3rem + 24 * ( (100vw - 420px) / 480));
+            line-height: calc(2.5rem + 24 * ( (100vw - 420px) / 480));
+            text-align: left;
+            padding-bottom: 2rem;
+            color: $red;
+        }
+        h3{
+            font-size: 2rem;
+        }
+        .img-fluid{
+            // height: auto;
+            width: 300px;
+        
+        }
+                
     }
 }
-
-h1 {
-    font-size: calc(3rem + 24 * ( (100vw - 420px) / 480));
-    line-height: calc(2.5rem + 24 * ( (100vw - 420px) / 480));
-    text-align: left;
-    padding-bottom: 2rem
-}
-
-
 .brand {
     //font
-    font-size: calc(2rem + 24 * ( (100vw - 420px) / 480));
+    font-size: 3rem;
     text-decoration: none;
-    line-height: calc(1.6rem + 24 * ( (100vw - 420px) / 480));
+    line-height: 2.4rem;
     position: absolute;
     left: 1rem;
   }
@@ -50,12 +69,11 @@ h1 {
     padding-top: 2rem;
     height: 150px;
     //font
-    color: $white;
     font-family: 'Fredoka One', cursive;
     .nav-item {
         margin: 0 5px;
         //font
-        color: $white;
+        color: $yellow;
         font-family: 'ABeeZee', sans-serif;
         font-weight: 900;
         font-size: 1rem;
@@ -68,7 +86,7 @@ h1 {
       }
       a {
         display: inline-block;
-        color: $white;
+        color: $red;
         text-decoration: none;
         &:active{
            color: $red;
@@ -81,11 +99,18 @@ h1 {
       height: 2rem;
       background-color: $red;
   }
- 
-.img-fluid{
-    width: 300px;
-}
 
 .centered{
     text-align: center;
+}
+
+.blue {
+    color: $blue;
+}
+.yellow{
+    color: $yellow;
+}
+
+.space-top{
+    margin-top: 100px ;
 }

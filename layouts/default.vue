@@ -1,14 +1,12 @@
 <template>
-  <div id='app section'>
-    <div class="red-line"></div>
+<div>
+  <div class="red-line"></div>
+
+  <div id='app'>
     <nav-bar />
     <nuxt />
-    <div class="container">
-  <div class="notification">
-    <p>Illustration by <a href="http://" target="_blank" rel="noopener noreferrer">xxxx</a></p>
   </div>
 </div>
-  </div>
 </template>
 
 

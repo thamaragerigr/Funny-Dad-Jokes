@@ -1,13 +1,15 @@
 <template>
   <div class=" section">
+     <div class="flex">
         <h1 class="brand-index">
-         <span>funny</span><br>
-         <span>dad</span><br>
-         <span>jokes</span>
+          <span>funny</span><br>
+          <span class="blue">dad</span><br>
+          <span class="yellow">jokes</span>
         </h1>
-      
-    <h3>Welcome to your daily dose of embarrassment</h3>
-    <img src="../static/kingdom-3.png" alt="Illustration" class="img-fluid">
+
+        <img src="../static/kingdom-3.png" alt="Illustration" class="img-fluid">
+    </div>
+     <h3>Welcome to your daily dose of embarrassment</h3>
   </div>
 </template>
 
