@@ -1,10 +1,22 @@
-# mywebsite
+# 👨 Funny Dad Jokes 👨
 
-> My laudable Nuxt.js project
+Proyecto usando Nuxt.js para traer chistes de la API [icanhazdadjoke](https://icanhazdadjoke.com/api)
+
+##### Tecnologías
+
+- [Nuxt.js](https://nuxtjs.org/) (Server-Side Rendering progressive framework basado en Vue.js)
+- [TailwindCSS](https://tailwindcss.com/)
+- [SCSS](https://sass-lang.com/documentation/syntax)
+
+
+![screenshot](static/screenshots/screenshot-1.png)
+![screenshot](static/screenshots/screenshot-2.png)
+![screenshot](static/screenshots/screenshot-3.png)
+![screenshot](static/screenshots/screenshot-4.png)
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install
 
