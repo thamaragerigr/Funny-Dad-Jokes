@@ -1,15 +1,15 @@
 <template>
-  <div class=" section">
-     <div class="flex">
+  <div class="section">
+     <div class="section-title float-left">
         <h1 class="brand-index">
           <span>funny</span><br>
-          <span class="blue">dad</span><br>
-          <span class="yellow">jokes</span>
+          <span>dad</span><br>
+          <span>jokes</span>
         </h1>
-
-        <img src="../static/kingdom-3.png" alt="Illustration" class="img-fluid">
+     <h2>Welcome to your daily dose of embarrassment!</h2>
     </div>
-     <h3>Welcome to your daily dose of embarrassment</h3>
+
+        <img src="../static/kingdom-3.png" alt="Illustration" class="section-img float-right">
   </div>
 </template>
 
@@ -17,7 +17,7 @@
 export default {
     head(){
         return {
-            title: 'Welcome to Dad Jokes!',
+            title: 'Funny Dad Jokes',
             meta: [ {
                 hid:'description',
                 name: 'description',

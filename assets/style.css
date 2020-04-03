@@ -3,46 +3,53 @@
   margin: 0;
 }
 
-body {
+* body {
   background-color: #ffffff;
-  color: #ff564f;
+  color: #3a4c59;
   font-family: 'Fredoka One', cursive;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-body #app {
-  max-width: 700px;
+* body #app {
+  max-width: 1000px;
   position: relative;
   margin: 0 auto;
 }
 
-body .section {
+* body #app p {
+  font-family: 'ABeeZee', sans-serif;
+}
+
+* body #app .section {
   padding: 2rem;
-  width: 80%;
+  width: 100%;
   position: absolute;
   margin: auto;
-  top: 200px;
+  top: 100px;
   right: 0;
   bottom: 0;
   left: 0;
 }
 
-body .section h1 {
+* body #app .section .section-title {
+  width: 50%;
+}
+
+* body #app .section .section-title h1 {
   font-size: calc(3rem + 24 * ( (100vw - 420px) / 480));
   line-height: calc(2.5rem + 24 * ( (100vw - 420px) / 480));
   text-align: left;
   padding-bottom: 2rem;
-  color: #ff564f;
 }
 
-body .section h3 {
+* body #app .section .section-img {
+  width: 50%;
+}
+
+h2, h3 {
   font-size: 2rem;
-}
-
-body .section .img-fluid {
-  width: 300px;
 }
 
 .brand {
@@ -69,7 +76,6 @@ nav {
 
 .nav .nav-item {
   margin: 0 5px;
-  color: #ff9d18;
   font-family: 'ABeeZee', sans-serif;
   font-weight: 900;
   font-size: 1rem;
@@ -83,11 +89,12 @@ nav {
 
 .nav a {
   display: inline-block;
-  color: #ff564f;
   text-decoration: none;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
-.nav a:active {
+.nav a:active, .nav a:hover {
   color: #ff564f;
 }
 
@@ -95,6 +102,7 @@ nav {
   width: 100%;
   height: 2rem;
   background-color: #ff564f;
+  margin-top: 50px;
 }
 
 .centered {
@@ -102,14 +110,22 @@ nav {
 }
 
 .blue {
-  color: #2567ef;
+  color: #2358c2;
 }
 
 .yellow {
   color: #ff9d18;
 }
 
-.space-top {
-  margin-top: 100px;
+.white {
+  color: #ffffff;
+}
+
+.pink {
+  color: #fee2e3;
+}
+
+.bg-red {
+  background-color: #ff564f;
 }
 /*# sourceMappingURL=style.css.map */

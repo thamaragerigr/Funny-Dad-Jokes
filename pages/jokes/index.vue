@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div>
+      <div class="mt-12 ml-4">
        <SearchJokes v-on:search-text="searchText" />
        <Joke v-for="joke in jokes" :key="joke.id" :id="joke.id" :joke="joke.joke" />
      </div>
